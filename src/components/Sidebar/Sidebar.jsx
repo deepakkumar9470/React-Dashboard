@@ -1,5 +1,5 @@
 import { ChevronsLeft, Menu } from "lucide-react";
-import SidebarItem from "./SidebarItem";
+import {SidebarItem} from "../index";
 const Sidebar = ({
   collapsed,
   onToggle,

@@ -14,12 +14,3 @@ import { Home, User, Clock, DollarSign, Users, FileText, Settings, Download, Fil
     { icon: Grid, onClick: () => console.log('Grid view') },
     { icon: Settings, onClick: () => console.log('Settings') }
   ];
-
- export const toolbarActions = [
-    { icon: Download, onClick: () => console.log('Download') },
-    { icon: Filter, onClick: () => console.log('Filter') },
-    { icon: Plus, variant: 'primary', onClick: () => console.log('Add') },
-    { icon: Grid, onClick: () => console.log('Grid') },
-    { icon: List, onClick: () => console.log('List') },
-    { icon: Network, onClick: () => console.log('Network') }
-  ];

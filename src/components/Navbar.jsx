@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import Button from "./ui/Button";
 import { Clock } from "lucide-react";
-import Avatar from "./ui/Avatar";
+import {Avatar,Button} from "./index";
 
 const Navbar = ({ title, actions, user }) => {
   const [currentTime, setCurrentTime] = useState(new Date());

@@ -1,5 +1,4 @@
-import Button from "./ui/Button";
-import Searchbar from "./ui/Searchbar";
+import {Searchbar,Button} from "./index"
 const Toolbar = ({ searchValue, onSearchChange, actions }) => {
   return (
     <div className="px-6 py-4 border-b border-gray-100 bg-white">
@@ -17,6 +16,7 @@ const Toolbar = ({ searchValue, onSearchChange, actions }) => {
               variant={a.variant || "ghost"}
               icon={a.icon}
               onClick={a.onClick}
+              active={a.active}
             />
           ))}
         </div>
