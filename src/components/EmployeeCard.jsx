@@ -14,11 +14,11 @@ const EmployeeCard = ({ employee, onClick }) => {
           size="lg" 
         />
 
-        <h3 className="mt-4 text-base font-semibold text-[#3D3936]">
+        <h3 className="mt-4 text-sm font-normal text-[#3D3936]">
           {employee?.name}
         </h3>
 
-        <p className="text-sm text-[#947550] mt-1">
+        <p className="text-xs text-[#947550] mt-1">
           {employee?.designation}
         </p>
       </div>

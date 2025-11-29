@@ -22,7 +22,7 @@ const Navbar = ({ title, user }) => {
   };
 
   return (
-    <header className="h-[72px] flex items-center bg-white border-b border-gray-100 p-6 m-4 rounded-2xl  shadow-sm">
+    <header className="h-[72px] flex items-center bg-white border-gray-100 p-6 m-4 rounded-2xl">
       <div className="flex items-center justify-between w-full">
         <h1 className="text-lg font-semibold text-[#3D3936]">{title}</h1>
 
