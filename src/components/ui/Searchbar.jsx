@@ -1,8 +1,7 @@
-import { Search } from 'lucide-react';
 const SearchBar = ({ placeholder, value, onChange }) => {
   return (
     <div className="relative flex-1 max-w-md">
-      <Search size={18} strokeWidth={1.5} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400" />
+      <img src="/icons/search.svg" alt="search" className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400" />
       <input
         type="text"
         placeholder={placeholder}

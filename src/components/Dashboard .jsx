@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import { headerActions, menuItems } from "../constants/menu-items";
+import { getToolbarActions, menuItems } from "../constants/menu-items";
 import employees from "../constants/employees-data";
-import { Download, Filter, Plus, Grid, List, Network } from "lucide-react";
-import {EmployeeCard, 
-  EmployeeListItem, 
-  LoadingShimmer, 
-  Logo, 
-  Navbar, 
-  Pagination, 
-  Sidebar, 
-  Toolbar
+import {
+  EmployeeCard,
+  EmployeeListItem,
+  LoadingShimmer,
+  Logo,
+  Navbar,
+  Pagination,
+  Sidebar,
+  Toolbar,
 } from "../components/index";
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("people");
@@ -19,26 +19,7 @@ const Dashboard = () => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [viewMode, setViewMode] = useState("grid");
 
-  const toolbarActions = [
-    { icon: Download, onClick: () => console.log("Download") },
-    { icon: Filter, onClick: () => console.log("Filter") },
-    { icon: Plus, variant: "primary", onClick: () => console.log("Add") },
-    {
-      icon: Grid,
-      onClick: () => {
-        setViewMode("grid");
-      },
-      active: viewMode === "grid",
-    },
-    {
-      icon: List,
-      onClick: () => {
-        setViewMode("list");
-      },
-      active: viewMode === "list",
-    },
-    { icon: Network, onClick: () => console.log("Network") },
-  ];
+  const toolbarActions = getToolbarActions(viewMode, setViewMode);
 
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -71,11 +52,9 @@ const Dashboard = () => {
       <main className="flex-1 overflow-auto">
         <Navbar
           title="People"
-          actions={headerActions}
           user={{
-            avatar:
-              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400",
-            name: "Current User",
+            avatar: "/images/user.png",
+            name: "Emily Rose",
           }}
         />
 

@@ -1,5 +1,5 @@
-const SidebarItem = ({ icon: Icon, label, active, onClick, collapsed }) => {
-  if (!Icon) return null;
+const SidebarItem = ({ icon, label, active, onClick, collapsed }) => {
+  if (!icon) return null;
 
   if (collapsed) {
     return (
@@ -11,7 +11,11 @@ const SidebarItem = ({ icon: Icon, label, active, onClick, collapsed }) => {
             : "text-gray-300 hover:bg-white/10 hover:text-white"
         }`}
       >
-        <Icon size={20} strokeWidth={1.5} />
+        <img 
+          src={icon} 
+          alt={label} 
+          className={`w-5 h-5 ${active ? 'brightness-0' : 'brightness-200'}`}
+        />
       </button>
     );
   }
@@ -26,7 +30,11 @@ const SidebarItem = ({ icon: Icon, label, active, onClick, collapsed }) => {
       }`}
     >
       <div className="flex items-center gap-3">
-        <Icon size={18} strokeWidth={1.5} />
+        <img 
+          src={icon} 
+          alt={label} 
+          className={`w-[18px] h-[18px] ${active ? 'brightness-0' : 'brightness-200'}`}
+        />
         <span className="text-[14px] font-normal">{label}</span>
       </div>
       <svg

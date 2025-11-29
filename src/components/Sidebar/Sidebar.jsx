@@ -1,4 +1,3 @@
-import { ChevronsLeft, Menu } from "lucide-react";
 import {SidebarItem} from "../index";
 const Sidebar = ({
   collapsed,
@@ -23,7 +22,7 @@ const Sidebar = ({
           }`}
         >
           {!collapsed ? (
-            <ChevronsLeft size={18} strokeWidth={1.5} />
+            <img src="/icons/leftarrow.svg" className="w-5 h-5" alt="" />
           ) : (
             <Menu size={18} strokeWidth={1.5} />
           )}

@@ -2,7 +2,7 @@ export { default as Sidebar } from './Sidebar/Sidebar';
 export { default as SidebarItem } from './Sidebar/SidebarItem';
 
 export { default as Avatar } from './ui/Avatar';
-export { default as Button } from './ui/Button';
+export { default as ToolBarIconButton } from './ui/ToolBarIconButton';
 export { default as LoadingShimmer } from './ui/LoadingShimmer';
 export { default as Logo } from './ui/Logo';
 export { default as Searchbar } from './ui/Searchbar';
