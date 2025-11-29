@@ -3,7 +3,7 @@ const EmployeeListItem = ({ employee, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="p-4 cursor-pointer border border-gray-100 rounded-lg bg-white hover:shadow-sm transition flex items-center gap-4"
+      className="p-4 cursor-pointer border border-gray-200 rounded-lg bg-white hover:shadow-sm transition flex items-center gap-4"
     >
       <Avatar
         src={employee.imageUrl} 
