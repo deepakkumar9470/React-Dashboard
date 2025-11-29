@@ -1,4 +1,4 @@
-import {SidebarItem} from "../index";
+import { SidebarItem } from "../index";
 const Sidebar = ({
   collapsed,
   onToggle,
@@ -24,7 +24,11 @@ const Sidebar = ({
           {!collapsed ? (
             <img src="/icons/leftarrow.svg" className="w-5 h-5" alt="" />
           ) : (
-            <Menu size={18} strokeWidth={1.5} />
+            <img
+              src="/icons/leftarrow.svg"
+              className="w-5 h-5 rotate-180"
+              alt=""
+            />
           )}
         </button>
       </div>
