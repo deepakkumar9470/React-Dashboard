@@ -1,4 +1,4 @@
-import {Avatar} from "./index";
+import { Avatar } from "./index";
 
 const EmployeeCard = ({ employee, onClick }) => {
   return (
@@ -8,23 +8,20 @@ const EmployeeCard = ({ employee, onClick }) => {
     >
       <div className="flex flex-col items-center text-center">
         <Avatar
-          src={employee?.imageUrl} 
-          alt={employee?.name} 
-          status={employee?.status} 
-          size="lg" 
+          src={employee?.imageUrl}
+          alt={employee?.name}
+          status={employee?.status}
+          size="lg"
         />
 
         <h3 className="mt-4 text-sm font-normal text-[#3D3936]">
           {employee?.name}
         </h3>
 
-        <p className="text-xs text-[#947550] mt-1">
-          {employee?.designation}
-        </p>
+        <p className="text-xs text-[#947550] mt-1">{employee?.designation}</p>
       </div>
     </div>
   );
 };
 
 export default EmployeeCard;
-
